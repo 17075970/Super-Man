@@ -1,0 +1,87 @@
+body {
+	background-color: #342E61;
+}
+
+div#sm {
+	height: 358px;;
+	width: 250px;
+	position: relative;
+	left: 580px;
+	top: 200px;
+}
+
+@keyframes smStance{
+	from{
+		top: 0;
+	}
+	to{
+		top: -20px;
+	}
+}
+
+div#sm #stance {
+	background-image: url(herofront_nocape.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	position: absolute;
+	animation-name: smStance;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes capeStance{
+	from{
+		top: 100px;
+		height: 142px;
+	}
+	to{
+		top: 80px;
+		height: 148px;
+	}
+}
+
+div#sm #cape {
+	background-image: url(cape.png);
+	background-repeat: no-repeat;
+	background-size: 161px 100%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 55px;
+	animation-name: capeStance;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes smShadow{
+	from{
+		width: 250px;
+		left: 0px;
+	}
+	to{
+		width: 270px;
+		left: -10px;
+	}
+}
+
+div#sm #shadow {
+	background-image: url(heroshadow.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 250px;
+	height: 80px;
+	opacity: 0.5;
+	position: absolute;
+	top: 330px;
+	animation-name: smShadow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
